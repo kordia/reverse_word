@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Reverse a String</title>
+</head>
+<body>
+    <div class= "title container">
+        <div class='row'>
+            <div class='col-sm-12'> 
+                <h1>Reverse a String</h1>
+            </div>
+        </div>
+    </div>    
+    <div class= "inside container">
+        <div class='row'>
+            <div class='col-sm-12'> 
+                <h4>Insert a word in the space provided. Then press enter.</h4>
+                <input type="text" id="mystring" value="" />
+                <button id="btn" onClick="doReverse()" >Reverse</button>
+            </div>
+        </div>
+    </div>
+    <script> 
+        function doReverse(){
+            var str = document.getElementById( 'mystring' ).value;
+            alert( "" + reverseString( str ) );
+        }
+                
+              
+        function reverseString( str ){
+            str = str.split(''); //split the entered string 
+            str = str.reverse(); //reverse the order 
+            str = str.join(''); //then join the reverse order array values
+            return str;
+        }
+
+      
+    </script>
+
+
+
+
+
+</body>
+</html>

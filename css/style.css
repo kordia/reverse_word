@@ -1,0 +1,14 @@
+body{
+    background-color: pink;
+    color: blue;
+}
+.title{
+    text-align: center;
+    margin-bottom: 20px;
+    padding-right: 100px;
+}
+.inside{
+    text-align: center;
+    margin-bottom: 20px;
+    padding-right: 100px;
+}
